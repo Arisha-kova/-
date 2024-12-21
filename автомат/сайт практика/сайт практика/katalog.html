@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/pov.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header-h1">pinAccessories</h1>
+        <nav class="header-nav">
+            <ul class="header-ul">
+                <li class="header-li"><a href="index.html" id="ha">Главная</a></li>
+                <li class="header-li"><a href="katalog.html" id="ha">Каталог</a></li>
+                <li class="header-li"><a href="kontact.html" id="ha">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+        <h1>Каталог ожерельев ручной работы</h1>
+        <div class="gallery">
+        <div class="catalog">
+            <div class="item">
+                    <a href="oj1.html">
+                <img src="1.jpg" alt="Ожерелье с камнями">
+                <h2><a href="#" class="item-title" data-description="Это ожерелье украшено натуральными камнями.">Ожерелье с камнями</a></h2>
+                <div class="price">Цена: 1000 руб.</div>
+                <button class="buy-button" onclick="location.href='kontact.html'">Купить</button>
+            </a>
+                <div class="description" id="desc1">
+                    <p>Это удивительное изделие с натуральными камнями, выполненное вручную.</p>
+                </div>
+            </div>
+    
+            <div class="item">
+                <a href="oj2.html">
+            <img src="3.jpg" alt="Ожерелье из жемчуга">
+            </a>
+                <h2><a href="#" class="item-title" data-description="Элегантное жемчужное ожерелье для особых случаев.">Ожерелье из жемчуга</a></h2>
+                <div class="price">Цена: 1500 руб.</div>
+                <button class="buy-button" onclick="location.href='kontact.html'">Купить</button>
+                <div class="description" id="desc2">
+                    <p>Элегантное ожерелье с жемчугом и стеклянными бусинами.</p>
+                </div>
+            </div>
+    
+            <div class="item">
+                <a href="oj3.html">
+                <img src="6.jpg" alt="Ожерелье с бисером">
+            </a>
+                <h2><a href="#" class="item-title" data-description="Яркое ожерелье, изготовленное из высококачественного бисера.">Ожерелье с бисером</a></h2>
+                <div class="price">Цена: 800 руб.</div>
+                <button class="buy-button" onclick="location.href='kontact.html'">Купить</button>
+                <div class="description" id="desc3">
+                    <p>Уникальное изделие с использованием редких минералов и авторской работы.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    
+        <script>
+            document.querySelectorAll('.item-title').forEach(item => {
+                item.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    const description = this.parentElement.nextElementSibling;
+                    if (description.style.display === 'none' || description.style.display === '') {
+                        description.style.display = 'block';
+                    } else {
+                        description.style.display = 'none';
+                    }
+                });
+            });
+            </script>
+    </body>
+
+</html>

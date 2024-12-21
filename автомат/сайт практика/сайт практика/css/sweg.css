@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5dc; /* Бежевый фон */
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    display: flex;
+    align-items: flex-start; /* Выравнивание по верхнему краю */
+    max-width: 800px;
+    margin: 0 auto; /* Центрирование контейнера */
+    background-color: #faf0e6; /* Легкий бежевый цвет для контейнера */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.image {
+    flex: 1; /* Занять одну часть пространства */
+    margin-right: 20px; /* Отступ справа */
+}
+.image img {
+    max-width: 100%; /* Адаптивная ширина изображения */
+    border-radius: 10px; /* Скругленные углы изображения */
+}
+.features {
+    flex: 2; /* Занять две части пространства */
+}
+h2 {
+    color: #8b4513; /* Темно-коричневый для заголовка */
+}
+ul {
+    list-style: none; /* Убираем маркеры */
+    padding: 0;
+}
+li {
+    margin: 10px 0; /* Отступы между пунктами списка */
+    background-color: #ffffff; /* Белый фон для пунктов */
+    padding: 10px;
+    border-radius: 5px; /* Скругленные углы для пунктов */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
